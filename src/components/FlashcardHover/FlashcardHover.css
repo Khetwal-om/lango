@@ -1,0 +1,46 @@
+.card{
+    height:40vh;
+    transform-style:preserve-3d;
+    position: relative;
+    transition: all 1s ease-in-out;
+    backface-visibility: hidden;
+  }
+  
+  .front, .back{
+    background: #19202A;
+    position: absolute;
+    backface-visibility: hidden;
+    padding: 2rem;
+    height:100%;
+    width:100%;
+    border-radius:10px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* display: grid;
+    place-items: center; */
+    transform-style:preserve-3d;
+    perspective: 1000px;
+    color: #6E8098;
+  
+  }
+  
+  .front {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .front::first-letter{
+    text-transform: capitalize;
+  }
+  
+  .back{
+    transform: rotateY( 180deg );
+  }
+  
+  .front > p , .back > p {
+    transform:translateZ(120px);
+  }
+  
+  .card:hover{
+    transform:rotateY(180deg);
+  }

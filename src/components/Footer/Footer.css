@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    /* align-items: center;
+    justify-content: center; */
+    min-height: 40vh;
+        /* background: rgba(63, 14, 71, 0.5); */
+      box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(40px);
+      /* Note: backdrop-filter has minimal browser support */
+            /* background: rgba(0, 0, 0, 0) linear-gradient(rgb(52, 53, 99) 0%, rgb(239, 73, 133) 100%) repeat scroll 0% 0%; */
+            background: rgba(63, 14, 71, 0.5);
+      color: white;
+      /* background: rgba(255, 255, 255, 0.95) none repeat scroll 0% 0%; */
+            
+      box-shadow: rgba(24, 32, 79, 0.25) 0px 40px 80px, rgba(255, 255, 255, 0.5) 0px 0px 0px 0.5px inset;
+      background:linear-gradient(
+        rgba(63, 14, 71, 0.5), 
+        rgba(63, 14, 71, 0.5)
+      ),
+      url('../../img/information.svg');
+      background-position: center;
+      background-size: cover;     
+}
+
+
+
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
