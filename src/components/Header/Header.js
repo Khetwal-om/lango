@@ -11,12 +11,12 @@ class Navbar extends Component {
           <NavLink  to="/" className="logo"><img src={Lango} alt=""/></NavLink>
           <ul className="navbar-menu">
             <li className="">
-              <NavLink to="/shayna" className="">
+              <NavLink to="/Shayna" className="">
                 Explore
               </NavLink>
             </li>
             <li className="">
-              <NavLink to="/emma" className="">
+              <NavLink to="/Lingua Marina" className="">
                 Contact
               </NavLink>
             </li>
