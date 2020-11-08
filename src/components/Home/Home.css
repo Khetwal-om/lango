@@ -37,3 +37,18 @@
     text-align: center;
     margin: 2rem 0;
 }
+
+
+
+
+
+@media screen and (max-width:768px){
+    .home {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .home__stark {
+        font-size: 40px ;
+        font-weight: 600;
+    }
+}
