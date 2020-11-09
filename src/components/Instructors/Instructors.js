@@ -34,13 +34,14 @@ class Instructors extends Component {
 }
 
 const mapStateToProps =  state  => {
+  console.log(state)
     return {
-      instructors: state.firestore.ordered.projects,
+      instructors: state.firestore.ordered.instructors,
     }
   }
   
   export default compose(
     connect(mapStateToProps,null),
-    firestoreConnect([{ collection: 'projects' }])
+    firestoreConnect([{ collection: 'instructors' }])
   )(Instructors)
   
